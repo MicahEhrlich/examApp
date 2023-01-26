@@ -30,15 +30,15 @@ export const Question = (props: QuestionPropTypes) => {
         setAnswer(event.target.value)
     }
 
-    const resetQuestion = () => {
+    const resetQuestion = (): void => {
         setAnswer("")
         setShowAlert(false);
         setIsUserCorrect(false)
     }
 
-    const skipQuestion = async (): Promise<void> => {
+    const skipQuestion = (): void => {
         resetQuestion()
-        await nextQuestion();
+        nextQuestion();
     }
 
     const submitAnswer = (): void => {

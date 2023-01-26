@@ -1,0 +1,11 @@
+.alert-answer {
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    margin: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}

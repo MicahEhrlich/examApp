@@ -1,0 +1,1 @@
+export const DATA_ENDPOINT = 'https://frontend-interview-api.bioz.com/question_data';

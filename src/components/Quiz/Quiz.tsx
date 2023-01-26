@@ -18,7 +18,7 @@ export const Quiz = () => {
 
     if (questionData?.german_word && questionData?.random_translations && questionData.correct_translation) {
         const { german_word, random_translations, correct_translation } = questionData;
-        const allAnswers = sortAnswersRandomly([...random_translations, correct_translation])
+        const allAnswers: string[] = sortAnswersRandomly([...random_translations, correct_translation])
         return (
             <Question nextQuestion={getNextQuestion} germanWord={german_word} answers={allAnswers} correctAnswer={correct_translation} />
         )
